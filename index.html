@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -24,6 +24,14 @@
                 You can also report any issues by highlighting the text and pressing <kbd>Ctrl</kbd> + <kbd>Enter</kbd>.
             </p>
 
+            <div class="search-container">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="Loading search index..." disabled autocomplete="off" />
+                    <button id="search-clear-btn" style="display: none;">&times;</button>
+                </div>
+                <div id="search-results" class="search-results-dropdown"></div>
+            </div>
 
             <div class="image-grid">
                 <div>
@@ -71,6 +79,7 @@
         2026 © <a href="https://hamwic.org" target="_blank"><strong>Hamwic.org</strong></a>
         | by <strong><a href="mailto:ivan.rieznyk@hamwic.org">Ivan Rieznyk</a></strong> | v 0.18
     </footer>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
