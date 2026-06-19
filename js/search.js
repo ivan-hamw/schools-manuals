@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Enable the input immediately (index is already in memory)
     input.removeAttribute('disabled');
-    input.placeholder = "Search topics (e.g. 'cables', 'PIN', 'sound')...";
+    input.placeholder = "Search topics (e.g. cables, PIN, sound, payslips)...";
 
     // Input handler
     input.addEventListener('input', () => {

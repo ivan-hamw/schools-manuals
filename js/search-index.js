@@ -93,8 +93,8 @@ const SEARCH_INDEX = [
     {
         pageUrl: 'other.html',
         pageTitle: 'Other IT Issues',
-        anchor: 'itrent-payslip-access-problems',
-        title: '💸 iTrent Payslip Access Problems',
+        anchor: 'itrent-payslips-access-problems',
+        title: '💸 iTrent Payslips Access Problems',
         content: 'If you are experiencing issues accessing the iTrent service, or if you are seeing error messages such as "Invalid login" or "Check your internet connection," please follow these steps to ensure you are logging in correctly. Access iTrent by visiting the Hamwic intranet website under System Links > Link to Neo payroll, or go directly to the iTrent web service. Login using your work email address as username, and your password (usually your bank account number). Open the Microsoft Authenticator app on your phone to retrieve the 6-digit verification code.'
     },
     {
