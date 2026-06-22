@@ -1,32 +1,56 @@
 :root {
     --primary-color: #2563eb;
     --secondary-color: #64748b;
-    --bg-color: #f1f5f9;
+    --bg-color: #083259;
     --card-bg: #ffffff;
     --text-main: #1e293b;
     --border-color: #e2e8f0;
 }
 
+
 body {
-    font-family:
-        "Segoe UI",
-        system-ui,
-        -apple-system,
-        sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    /* min-height: 100vh; */
-    background-attachment: fixed;
-    background-image: conic-gradient(rgb(24, 64, 120),
-            rgb(3, 88, 76),
-            rgb(141, 100, 255),
-            rgb(7, 114, 191),
-            rgb(149, 40, 80),
-            rgb(24, 64, 120));
-    line-height: 1.5;
     margin: 0;
     padding-top: 25px;
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    position: relative;
+    z-index: 0;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 600vw;
+    height: 600vh;
+
+    top: -50px;
+    left: -50px;
+
+    background: conic-gradient(rgb(24, 64, 120),
+            rgb(3, 88, 76),
+            rgb(6, 93, 155),
+            rgb(149, 40, 80),
+            /* rgb(106, 84, 168), */
+            rgb(24, 64, 120));
+
+    animation: spin 200s linear infinite;
+
+    z-index: -1;
+}
+
+/* ✅ CRUCIAL PART */
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
 
 .container {
     max-width: 900px;
@@ -204,8 +228,15 @@ footer {
     /* border-top: 1px solid var(--border-color); */
     text-align: center;
     font-size: 0.8rem;
-    color: var(--bg-color);
+    color: white;
 }
+
+
+footer a,
+footer a:visited {
+    color: white;
+}
+
 
 /*CARDS version 1 */
 .info-callout {
@@ -377,7 +408,7 @@ footer {
 :root {
     --btn-color: #9d9d9d;
     --btn-hover: #6c5ce7;
-    --transition-speed: 0.25s;
+    --transition-speed: 0.1s;
 }
 
 /* Modern Link Button */
@@ -441,9 +472,9 @@ footer {
     transform: translate(-50%, -50%) rotate(-15deg);
     /* Centers and tilts text */
 
-    background-color: rgba(255, 193, 7, 0.9);
+    background-color: rgba(255, 193, 7, 0.7);
     /* Warning yellow */
-    color: #000;
+    color: #383c00;
     font-weight: bold;
     font-size: 0.9rem;
     padding: 5px 15px;
@@ -456,7 +487,7 @@ footer {
 
 /* 3. Visual styling for unfinished items */
 .wip img {
-    filter: grayscale(80%) blur(1px);
+    filter: grayscale(80%) blur(2px);
     opacity: 0.6;
     transition: none !important;
     transform: none !important;
@@ -474,7 +505,7 @@ footer {
 
 .search-container {
     position: relative;
-    max-width: 650px;
+    max-width: 750px;
     margin: 25px auto 35px auto;
     padding: 0 40px;
     /* aligns with .glass-card h2/p padding of 40px */

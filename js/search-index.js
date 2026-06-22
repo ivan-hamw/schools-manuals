@@ -54,8 +54,8 @@ const SEARCH_INDEX = [
     {
         pageUrl: 'print.html',
         pageTitle: 'Printing Issues',
-        anchor: 'oops-i-forgot-my-pin-code',
-        title: '🔑 Oops, I forgot my PIN code',
+        anchor: 'oops-i-forgot-my-pin-code-for-printer',
+        title: '🔑 Oops, I forgot my PIN code for printer',
         content: 'Visit your school\'s uniFLOW website. Bishop Aldhelms, Wimborne First, and Pimperne Primary all have unique login links. Click "Continue with [Your School Name]". Access your Dashboard from the left-side menu. In the Identities section, locate the PIN option, click the three-dot menu and select Show PIN code.'
     },
     {
@@ -96,6 +96,13 @@ const SEARCH_INDEX = [
         anchor: 'itrent-payslips-access-problems',
         title: '💸 iTrent Payslips Access Problems',
         content: 'If you are experiencing issues accessing the iTrent service, or if you are seeing error messages such as "Invalid login" or "Check your internet connection," please follow these steps to ensure you are logging in correctly. Access iTrent by visiting the Hamwic intranet website under System Links > Link to Neo payroll, or go directly to the iTrent web service. Login using your work email address as username, and your password (usually your bank account number). Open the Microsoft Authenticator app on your phone to retrieve the 6-digit verification code.'
+    },
+    {
+        pageUrl: 'other.html',
+        pageTitle: 'Other IT Issues',
+        anchor: 'microsoft-authenticator-setup',
+        title: '🔏 Microsoft authenticator setup',
+        content: 'We use the Microsoft Authenticator app to verify your identity when signing into any school system. This manual will help you install and set up the app. Install the app on your phone using the QR code or link. Open the app, tap Add work or school account, and Sign in. Enter your school email credentials. When signing into Microsoft Online Services, enter the number shown on your browser screen into the app notification. You can also use Microsoft Authenticator for Multi-Factor Authentication (MFA) on other platforms: click the plus button or scan a QR code to register, and retrieve a 6-digit verification code from the app.'
     },
     {
         pageUrl: 'other.html',
