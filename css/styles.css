@@ -712,3 +712,67 @@ footer a:visited {
         right: 20px;
     }
 }
+
+/* ==========================================
+   DEEP-LINK: COPY BUTTON + TOAST
+   ========================================== */
+
+/* The 🔗 button sits at the far right of every accordion summary */
+.copy-link-btn {
+    margin-left: auto;
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 2px 6px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.2s ease, background-color 0.2s ease, transform 0.15s ease;
+    color: inherit;
+    line-height: 1;
+}
+
+/* Show button on summary hover (desktop) */
+details summary:hover .copy-link-btn,
+details[open] summary .copy-link-btn {
+    opacity: 0.55;
+}
+
+.copy-link-btn:hover {
+    opacity: 1 !important;
+    background-color: rgba(0, 0, 0, 0.08);
+    transform: scale(1.15);
+}
+
+/* Always visible on touch devices */
+@media (hover: none) {
+    .copy-link-btn {
+        opacity: 0.45;
+    }
+}
+
+/* Toast notification */
+#deep-link-toast {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%) translateY(12px);
+    background: #1e293b;
+    color: #f1f5f9;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 9999;
+    white-space: nowrap;
+}
+
+#deep-link-toast.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
