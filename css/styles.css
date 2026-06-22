@@ -326,7 +326,7 @@ footer a:visited {
 .glass-container {
     display: flex;
     justify-content: center;
-    padding: 20px 20px;
+    padding: 0px 20px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -352,12 +352,10 @@ footer a:visited {
 }
 
 /* main page specific */
-.glass-card h2,
 .glass-card p {
-    padding: 20px 20px;
     color: white;
     font-weight: 600;
-    padding: 0 40px;
+    padding: 20px 80px;
     filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
 }
 
