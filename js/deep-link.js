@@ -48,7 +48,7 @@
       btn.className = 'copy-link-btn';
       btn.title = 'Copy link to this topic';
       btn.setAttribute('aria-label', 'Copy link to this topic');
-      btn.innerHTML = '🔗';
+      btn.innerHTML = '<span class="material-symbols-outlined">share</span>';
 
       btn.addEventListener('click', (e) => {
         e.stopPropagation(); // don't toggle the accordion
