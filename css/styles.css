@@ -54,6 +54,19 @@ body::before {
 }
 
 
+.spinner {
+    /* background: white; */
+    position: fixed;
+
+    border-radius: 100%;
+    border: 40px dotted;
+    border-color: rgba(255, 255, 255, 0.1);
+    animation: spin 30s linear infinite;
+    /* backdrop-filter: blur(15px); */
+    /* -webkit-backdrop-filter: blur(15px); */
+    /* animation-delay: var(--spin-delay, 0s); */
+}
+
 
 
 .container {
@@ -338,9 +351,9 @@ footer a:visited {
     /* The Glass Effect */
     background: rgba(255, 255, 255, 0.1);
     /* Transparent white */
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(15px);
     /* The blur effect */
-    -webkit-backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(15px);
     /* Safari support */
 
     /* Border and Shadow */
