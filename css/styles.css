@@ -55,16 +55,11 @@ body::before {
 
 
 .spinner {
-    /* background: white; */
     position: fixed;
-
     border-radius: 100%;
     border: 40px dotted;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.05);
     animation: spin 30s linear infinite;
-    /* backdrop-filter: blur(15px); */
-    /* -webkit-backdrop-filter: blur(15px); */
-    /* animation-delay: var(--spin-delay, 0s); */
 }
 
 
