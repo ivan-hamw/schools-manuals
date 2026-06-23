@@ -7,11 +7,9 @@
     <title>Manuals: Hamwic IT Support</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/feedbacksend.js"></script>
-
 </head>
 
 <body>
-
     <div class="glass-container">
         <div class="glass-card">
             <div class="search-container">
@@ -30,8 +28,8 @@
                         <H3>Interactive Screen Boards</H3>
                     </a>
                 </div>
-                <div>
 
+                <div>
                     <a href="print.html">
                         <img src="img/main/printer_issues.png" alt="Printing issues">
                         <H3>Printing issues</H3>
@@ -56,6 +54,7 @@
                     <img src="img/main/Filtering.png" alt="File sync and services">
                     <H3>Network and filtering</H3>
                 </div>
+
                 <div class="wip">
                     <img src="img/main/sync.png" alt="File sync and services">
                     <H3>File sync and services</H3>
@@ -84,15 +83,22 @@
                 Ivan Rieznyk
             </a>
         </strong>
-        | v 0.25
+        | v 0.26
     </footer>
     <script src="js/search-index.js"></script>
     <script src="js/search.js"></script>
+
+
+    <script>
+        const randomDelay = -(Math.random() * 200); // match your 200s duration
+        document.documentElement.style.setProperty('--spin-delay', randomDelay + 's');
+    </script>
+
+
 </body>
 
 </html>
 <!-- 
-
 0.14 - index redisign 
 0.20 - Search 
 0.21 - Search update and new topics (i am updating it now)
@@ -100,4 +106,6 @@
 0.23 - search index update, new topics added, MFA setup.
 0.24 - minor design update.
 0.25 - deep-link feature added. Click to get deep direct link to the topic.
+0.26 - small design update. Index page.
+0.26 - Small design update. Index page. fix
 -->

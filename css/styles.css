@@ -35,15 +35,14 @@ body::before {
             rgb(3, 88, 76),
             rgb(6, 93, 155),
             rgb(149, 40, 80),
-            /* rgb(106, 84, 168), */
             rgb(24, 64, 120));
 
     animation: spin 200s linear infinite;
+    animation-delay: var(--spin-delay, 0s);
 
     z-index: -1;
 }
 
-/* ✅ CRUCIAL PART */
 @keyframes spin {
     from {
         transform: translate(-50%, -50%) rotate(0deg);
@@ -59,7 +58,7 @@ body::before {
 
 .container {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 30px auto 0;
     background: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
@@ -326,7 +325,7 @@ footer a:visited {
 .glass-container {
     display: flex;
     justify-content: center;
-    padding: 0px 20px;
+    padding: 30px 20px 0;
     width: 100%;
     box-sizing: border-box;
 }
@@ -741,7 +740,7 @@ details[open] summary .copy-link-btn {
 
 .copy-link-btn:hover {
     opacity: 1 !important;
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(255, 255, 255, 1);
     transform: scale(1.15);
 }
 
