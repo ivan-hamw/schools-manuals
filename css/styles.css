@@ -61,13 +61,28 @@ body::before {
     }
 }
 
+@keyframes fade {
+    0% {
+        opacity: 0.0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
 
 .spinner {
     position: fixed;
     border-radius: 100%;
     border: 40px dotted;
-    border-color: rgba(255, 255, 255, 0.05);
-    animation: spin 30s linear infinite;
+    border-color: rgba(255, 255, 255, 0.2);
+    animation: spin 30s linear infinite,
+        fade 10s ease-in-out infinite;
 }
 
 
