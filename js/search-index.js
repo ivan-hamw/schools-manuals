@@ -110,5 +110,12 @@ const SEARCH_INDEX = [
         anchor: 'how-to-set-up-a-signature-for-all-your-emails-in-outlook',
         title: '💌 How to set up a signature for all your emails in Outlook',
         content: 'Prepare your email signature in Microsoft Word first, then copy it to Outlook. Use a table with invisible borders, image on the left, text on the right. Select all with Ctrl + A, copy with Ctrl + C. In Outlook, click the gear icon to open Settings. Search "Signatures", click Add signature, name it, paste with Ctrl + V, and save. Check default settings before saving.'
+    },
+    {
+        pageUrl: 'other.html',
+        pageTitle: 'Other IT Issues',
+        anchor: 'annoying-virus-alerts-and-notifications',
+        title: '😨🆘 I am getting annoying alerts and notifications from Virus, Antivirus, unknown websites',
+        content: 'If you are getting unexpected notifications and pop-ups in your browser, do not click on any links or buttons within them. They usually contain fake warnings about viruses and security problems. Remove suspicious websites from your notification list in Microsoft Edge: open the 3-dots menu > Settings > Privacy, search, and services > Site permissions > All permissions > Notifications. Remove any websites you do not recognise. It is safe to clear the entire list — legitimate sites will simply ask for permission again. If you accidentally clicked on an alert, contact IT support.'
     }
 ];

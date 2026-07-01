@@ -191,14 +191,15 @@
           <p>
             To find print queue you need open your WIndows settings. You can do it by pressing <kbd>Win</kbd> +
             <kbd>I</kbd> shortcut or find
-            setting option in wWIndows Start menu (🪟).
+            setting option in WIndows Start menu (🪟).
           </p>
           <p>
             Go to <strong>Bluetooth & Devices</strong> > <strong>Printers & scanners</strong> and select printer in the
             list of all your printers.
           </p>
           <div class="imagesbox">
-            <img src="img/printing/print_queue.jpg" alt="WIndows print Queue" class="instruction-img">
+            <img src="img/printing/print_queue.jpg" alt="WIndows print Queue" class="instruction-img"
+              onclick="enlargeImage(this)" style="max-width: 600px; cursor:zoom-in;">
           </div>
           <p>If you will select printer you will se Print Queue option. Select it to open full list of print jobs. You
             will see all your printing jobs there. Some of them may be in "Error" state. Don't worry about it. It's
@@ -210,7 +211,8 @@
             image.
           </p>
           <div class="imagesbox">
-            <img src="img/printing/printer_queue.jpg" alt="WIndows print Queue" class="instruction-img">
+            <img src="img/printing/printer_queue.jpg" alt="WIndows print Queue" class="instruction-img"
+              onclick="enlargeImage(this)" style="max-width: 600px; cursor:zoom-in;">
           </div>
           <p>
             After clearing all print jobs your printer should be ready try to use it one more time. In case the problem
@@ -236,6 +238,18 @@
     <a href="https://hamwic.org" target="_blank"><strong>Hamwic.org</strong></a> - 2026
     | by <strong><a href="mailto:ivan.rieznyk@hamwic.org">Ivan Rieznyk</a></strong>
   </footer>
+
+  <div id="imageModal"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:999; justify-content:center; align-items:center; cursor:pointer;"
+    onclick="this.style.display='none'">
+    <img id="modalImg" src="" style="max-width:90%; max-height:90%; border: 3px solid white; border-radius: 4px;">
+  </div>
+
+
 </body>
+
+<script src="js/images-click.js"></script>
+
+
 
 </html>
