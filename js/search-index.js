@@ -117,5 +117,12 @@ const SEARCH_INDEX = [
         anchor: 'annoying-virus-alerts-and-notifications',
         title: '😨🆘 I am getting annoying alerts and notifications from Virus, Antivirus, unknown websites',
         content: 'If you are getting unexpected notifications and pop-ups in your browser, do not click on any links or buttons within them. They usually contain fake warnings about viruses and security problems. Remove suspicious websites from your notification list in Microsoft Edge: open the 3-dots menu > Settings > Privacy, search, and services > Site permissions > All permissions > Notifications. Remove any websites you do not recognise. It is safe to clear the entire list — legitimate sites will simply ask for permission again. If you accidentally clicked on an alert, contact IT support.'
+    },
+    {
+        pageUrl: 'other.html',
+        pageTitle: 'Other IT Issues',
+        anchor: 'change-colour-size-speed-of-your-mouse-pointer',
+        title: '🖱️ Change colour, size, speed of your mouse pointer (cursor)',
+        content: 'Adjust your mouse cursor or movement speed in Windows Settings (Win + I). Go to Bluetooth & devices > Mouse to set primary mouse button, pointer speed, and Enhance Pointer Precision. In the Scrolling section adjust mouse wheel and touchpad two-finger scrolling. For Touchpad specific gestures go to Bluetooth & devices > Touchpad. To change pointer size or colour go to Accessibility > Mouse pointer and touch — choose pointer style, size, and custom colour. Enable Mouse indicator to show a circle around the cursor when you press CTRL, useful if you lose track of the pointer.'
     }
 ];
