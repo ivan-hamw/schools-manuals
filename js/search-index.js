@@ -124,5 +124,12 @@ const SEARCH_INDEX = [
         anchor: 'change-colour-size-speed-of-your-mouse-pointer',
         title: '🖱️ Change colour, size, speed of your mouse pointer (cursor)',
         content: 'Adjust your mouse cursor or movement speed in Windows Settings (Win + I). Go to Bluetooth & devices > Mouse to set primary mouse button, pointer speed, and Enhance Pointer Precision. In the Scrolling section adjust mouse wheel and touchpad two-finger scrolling. For Touchpad specific gestures go to Bluetooth & devices > Touchpad. To change pointer size or colour go to Accessibility > Mouse pointer and touch — choose pointer style, size, and custom colour. Enable Mouse indicator to show a circle around the cursor when you press CTRL, useful if you lose track of the pointer.'
+    },
+    {
+        pageUrl: 'other.html',
+        pageTitle: 'Other IT Issues',
+        anchor: 'open-another-mailbox-in-outlook',
+        title: '📬 Open another mailbox in Outlook',
+        content: 'If you need to access a shared mailbox in Outlook, it is straightforward. Open Outlook and sign in. Click on your profile picture or initials in the top right corner. Select "Open another mailbox" from the dropdown menu. In the dialog box, type the email address of the mailbox you wish to open and click Open.'
     }
 ];
