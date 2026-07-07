@@ -2,7 +2,7 @@ IDEA: make special section for every day tips and tricks. Extreemly short manual
 
 Page will be with the same disign but will contain only one topic and go back button. 
 
-I have implemented the "IT Tips & Tricks" section.
+it should use topics list from search-index.js so i do not need to do any copies of topics.
 
 plan:
 
@@ -12,4 +12,3 @@ Included 10 different tips covering a range of common IT issues.
 Used a typewriter effect for the tip title for a nice visual touch.
 Added a "Back to Main Menu" button for easy navigation.
 Uses the same dark, glassmorphism design as the rest of your site.
-You can test it now by going to http://[IP_ADDRESS]/it-tips.html (or http://schools.hamwic.org/it-tips.html if you've deployed it).

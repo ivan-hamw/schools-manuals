@@ -25,6 +25,19 @@
 
     <div class=" glass-container">
         <div class="glass-card">
+            <!-- Random tip 💡 widget -->
+            <div class="tip-widget" id="tip-widget">
+                <div class="tip-top-row">
+                    <p class="tip-title" id="tip-title"></p>
+                    <span class="tip-label">Random tip 💡</span>
+                </div>
+                <p class="tip-snippet" id="tip-snippet"></p>
+                <div class="tip-footer">
+                    <a class="tip-read-more" id="tip-link" href="#">Read more</a>
+                    <button class="tip-shuffle-btn" id="tip-shuffle" title="Show another tip">🔀</button>
+                </div>
+            </div>
+
             <div class="search-container">
                 <div class="search-input-wrapper">
                     <span class="search-icon">🔍</span>
@@ -34,6 +47,7 @@
                 </div>
                 <div id="search-results" class="search-results-dropdown"></div>
             </div>
+
             <div class="image-grid">
                 <div>
                     <a href="iwb.html">
@@ -96,7 +110,7 @@
                 Ivan Rieznyk
             </a>
         </strong>
-        | v 0.38
+        | v 0.39
     </footer>
 
     <script src="js/search-index.js"></script>
@@ -105,6 +119,36 @@
     <script>
         const randomDelay = -(Math.random() * 200); // match your 200s duration
         document.documentElement.style.setProperty('--spin-delay', randomDelay + 's');
+
+        // ── Did you know? tip widget ───────────────────────────────────────────
+        (function () {
+            let lastIndex = -1;
+
+            function pickTip() {
+                let idx;
+                do { idx = Math.floor(Math.random() * SEARCH_INDEX.length); }
+                while (SEARCH_INDEX.length > 1 && idx === lastIndex);
+                lastIndex = idx;
+                return SEARCH_INDEX[idx];
+            }
+
+            function renderTip(tip) {
+                document.getElementById('tip-title').textContent = tip.title;
+                document.getElementById('tip-snippet').textContent = tip.content;
+                document.getElementById('tip-link').href = tip.pageUrl + '#' + tip.anchor;
+                // re-trigger fade-in animation
+                const w = document.getElementById('tip-widget');
+                w.style.animation = 'none';
+                w.offsetHeight; // reflow
+                w.style.animation = '';
+            }
+
+            renderTip(pickTip());
+
+            document.getElementById('tip-shuffle').addEventListener('click', function () {
+                renderTip(pickTip());
+            });
+        })();
     </script>
 
     <script data-goatcounter="https://ivan-hamw.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -132,4 +176,5 @@
 0.36 - Visitors counter added.
 0.37 - new topic added (Mouse and Touchpad). Manual on Other IT issues updated.
 0.38 - new manual added (Open another mailbox in Outlook).
+0.39 - Random tip 💡 widget on index page.
 -->

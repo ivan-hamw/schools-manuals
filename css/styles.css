@@ -541,7 +541,7 @@ footer a:visited {
 .search-container {
     position: relative;
     max-width: 750px;
-    margin: 25px auto 35px auto;
+    margin: 18px auto 35px auto;
     padding: 0 40px;
     /* aligns with .glass-card h2/p padding of 40px */
 }
@@ -805,4 +805,109 @@ details[open] summary .copy-link-btn {
 #deep-link-toast.visible {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
+}
+
+/* ==========================================
+   TIP OF THE DAY WIDGET
+   ========================================== */
+
+.tip-widget {
+    margin: 24px 40px 0;
+    padding: 16px 22px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    animation: tipFadeIn 0.4s ease both;
+}
+
+@keyframes tipFadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.tip-widget p {
+    padding: 0;
+    margin: 0;
+    filter: none;
+    font-weight: normal;
+}
+
+.tip-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tip-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(255, 243, 138, 0.65);
+    flex-shrink: 0;
+}
+
+.tip-title {
+    font-size: 0.95rem;
+    font-weight: 700 !important;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+}
+
+.tip-snippet {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.tip-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.tip-read-more {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255, 243, 138, 0.8) !important;
+    border-bottom: 1px solid rgba(255, 243, 138, 0.3);
+    padding-bottom: 1px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tip-read-more:hover {
+    color: #fff38a !important;
+    border-color: #fff38a;
+}
+
+.tip-shuffle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: color 0.2s, transform 0.35s ease;
+    line-height: 1;
+}
+
+.tip-shuffle-btn:hover {
+    color: rgba(255, 255, 255, 0.6);
+    transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+    .tip-widget {
+        margin: 16px 20px 0;
+        padding: 14px 16px 18px;
+    }
 }
