@@ -812,9 +812,10 @@ details[open] summary .copy-link-btn {
    ========================================== */
 
 .tip-widget {
-    margin: 24px 40px 0;
+    border-radius: 10px;
+    margin: 24px 70px 0;
     padding: 16px 22px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border: 3px dotted rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -822,8 +823,15 @@ details[open] summary .copy-link-btn {
 }
 
 @keyframes tipFadeIn {
-    from { opacity: 0; transform: translateY(-6px); }
-    to   { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .tip-widget p {
