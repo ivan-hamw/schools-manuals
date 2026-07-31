@@ -55,35 +55,35 @@ const SEARCH_INDEX = [
         pageUrl: 'print.html',
         pageTitle: 'Printing Issues',
         anchor: 'oops-i-forgot-my-pin-code-for-printer',
-        title: '🔑 Oops, I forgot my PIN code for printer',
-        content: 'Visit your school\'s uniFLOW website. Bishop Aldhelms, Wimborne First, and Pimperne Primary all have unique login links. Click "Continue with [Your School Name]". Access your Dashboard from the left-side menu. In the Identities section, locate the PIN option, click the three-dot menu and select Show PIN code.'
+        title: '🔑 How to Retrieve Your Printer PIN',
+        content: 'Visit your school\'s uniFLOW website. Bishop Aldhelms, Wimborne First, Pimperne Primary, and Henbury View First have unique login links. Click "Continue with [Your School Name]". Access your Dashboard from the left-side menu. In the Identities section, locate the PIN option, click the three-dot menu and select Show PIN code.'
     },
     {
         pageUrl: 'print.html',
         pageTitle: 'Printing Issues',
         anchor: 'check-printer-name',
-        title: '🏷️ Check Printer name',
+        title: '🏷️ Check the Printer Name',
         content: 'When you are ready to print, a print dialogue window will appear. Select which printer you wish to use. Printer names vary by school. Common examples: WFS_Print, CanonSecurePrint, Secure Print. If unsure, ask a colleague to check their print dialogue using Ctrl + P.'
     },
     {
         pageUrl: 'print.html',
         pageTitle: 'Printing Issues',
         anchor: 'uniflow-app-check',
-        title: '🔄 uniFLOW app check',
+        title: '🔄 Check If the uniFLOW App Is Running',
         content: 'The uniFLOW app must be running on your device before you print. Check the system tray in the bottom-right corner for the uniFLOW icon. To start the app, press the Windows Start button, type "uniFLOW" and click Open. You can also Re-register the app connection from the settings window.'
     },
     {
         pageUrl: 'print.html',
         pageTitle: 'Printing Issues',
         anchor: 'windows-printing-queue-check',
-        title: '⏳ Windows printing queue check',
-        content: 'Open Windows settings with Win + I. Go to Bluetooth & Devices > Printers & scanners and select your printer. Click Print Queue to see all print jobs. Some may show an Error status — this is normal. To delete a print job, right-click and select Cancel. Clearing all failed jobs should allow the printer to work again.'
+        title: '⏳ Check the Windows Print Queue',
+        content: 'Open Windows settings with Win + I. Go to Bluetooth & Devices > Printers & scanners and select your printer. Click Open queue to see all print jobs. Some may show an Error status — this is normal. To clear a print job, right-click and select Cancel. Clearing stuck jobs should allow the printer to work again.'
     },
 
     // ── Laptop / Desktop Issues (laptops_desktop.html) ───────────────────────
     {
         pageUrl: 'laptops_desktop.html',
-        pageTitle: 'Laptop / Desktop Issues',
+        pageTitle: 'Laptop & Desktop Issues',
         anchor: 'i-cant-turn-on-my-laptop',
         title: '💻 I can\'t turn on my laptop',
         content: 'If the screen remains blank after pressing the power button or lights blink without display: First, connect your charger — the battery may be depleted. Second, try a hard reset by pressing and holding the power button for 10 to 15 seconds. This can clear an energy-saving mode that makes the laptop appear off. Release and press once more to turn on.'
@@ -101,7 +101,7 @@ const SEARCH_INDEX = [
         pageUrl: 'other.html',
         pageTitle: 'Other IT Issues',
         anchor: 'microsoft-authenticator-setup',
-        title: '🔏 Microsoft authenticator setup',
+        title: '🔏 Microsoft Authenticator Setup',
         content: 'We use the Microsoft Authenticator app to verify your identity when signing into any school system. This manual will help you install and set up the app. Install the app on your phone using the QR code or link. Open the app, tap Add work or school account, and Sign in. Enter your school email credentials. When signing into Microsoft Online Services, enter the number shown on your browser screen into the app notification. You can also use Microsoft Authenticator for Multi-Factor Authentication (MFA) on other platforms: click the plus button or scan a QR code to register, and retrieve a 6-digit verification code from the app.'
     },
     {
@@ -115,14 +115,14 @@ const SEARCH_INDEX = [
         pageUrl: 'other.html',
         pageTitle: 'Other IT Issues',
         anchor: 'annoying-virus-alerts-and-notifications',
-        title: '😨🆘 I am getting annoying alerts and notifications from Virus, Antivirus, unknown websites',
+        title: '😨🆘 Stop Annoying Virus Alerts and Browser Pop-up Notifications',
         content: 'If you are getting unexpected notifications and pop-ups in your browser, do not click on any links or buttons within them. They usually contain fake warnings about viruses and security problems. Remove suspicious websites from your notification list in Microsoft Edge: open the 3-dots menu > Settings > Privacy, search, and services > Site permissions > All permissions > Notifications. Remove any websites you do not recognise. It is safe to clear the entire list — legitimate sites will simply ask for permission again. If you accidentally clicked on an alert, contact IT support.'
     },
     {
         pageUrl: 'other.html',
         pageTitle: 'Other IT Issues',
         anchor: 'change-colour-size-speed-of-your-mouse-pointer',
-        title: '🖱️ Change colour, size, speed of your mouse pointer (cursor)',
+        title: '🖱️ Change the Colour, Size, and Speed of Your Mouse Pointer',
         content: 'Adjust your mouse cursor or movement speed in Windows Settings (Win + I). Go to Bluetooth & devices > Mouse to set primary mouse button, pointer speed, and Enhance Pointer Precision. In the Scrolling section adjust mouse wheel and touchpad two-finger scrolling. For Touchpad specific gestures go to Bluetooth & devices > Touchpad. To change pointer size or colour go to Accessibility > Mouse pointer and touch — choose pointer style, size, and custom colour. Enable Mouse indicator to show a circle around the cursor when you press CTRL, useful if you lose track of the pointer.'
     },
     {
